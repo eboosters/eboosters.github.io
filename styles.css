@@ -34,7 +34,7 @@ a:hover{
 }
 /*Styling the Header*/
 header{
-	background:#14182f;
+	/*background:#14182f;*/
 	color: #fff;
 	position: sticky;
 	width: 100%;
@@ -126,7 +126,7 @@ section p{
 	height: 100%;
 	background-size: cover;
 	z-index: -1;
-	background-color: #80a3db;
+	/*background-color: #80a3db;*/
 }
 .hero h1{
 	    color: #90cbff;
@@ -165,7 +165,7 @@ section p{
 	width: 100%;
 	margin: 20px auto;
 	height: 600px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	box-shadow: 0px 3px 7px 1px;
 }
 .carousel-inner{
@@ -174,7 +174,7 @@ section p{
 }
 /*End of Image Slider Section*/
 section:not(.hero){
-	background-color: #f5f5f5;
+	background-color: #ec3312b5;
 }
 
 /*footer section*/
@@ -191,12 +191,17 @@ footer{
 footer ul {
 	display: flex;
 }
+ul li i{
+	transition: all .6s ;
+}
 footer ul li{
 	list-style: none;
 	margin-left: 16px;
+
 }
-li.fa:hover{
+ul li i:hover{
 	transform: scale(1.2);
+	color: #1e9ee0;
 }
 footer p{
 	text-transform: uppercase;
