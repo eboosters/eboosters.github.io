@@ -8,23 +8,23 @@ html{
 	color: #555;
 }
 body{
-		background-color: #9372cd;
+		background-color: #2f2b37;
 }
 
 nav{
 	display: flex;
 	color:white;
 }
-ul{
-	list-style: none;
-}
-li{
-	list-style: none;
+
+header h2{
+	padding: 20px 20px;
 }
 a{
+	width: 100%;
+	height: 100%;
 	color: #fff;
 	text-decoration: none;
-	opacity: 0.75;
+	opacity: 1;
 }
 a:hover{
 	opacity: 1;
@@ -40,8 +40,15 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	opacity: 0;
-	padding: 35px 100px 0;
+	/*padding: 35px 100px 0;*/
 	animation:1s 0.5s fadein forwards;
+}
+.nav-link{
+	padding: 20px 20px ;
+}
+.nav-link:hover{
+	cursor: pointer;
+	background-color: blue;
 }
 @keyframes fadein{
 	100%{
@@ -50,13 +57,13 @@ header{
 }
 header nav{
 	display: flex;
-	margin-right:-15px; 
+	margin-right:15px; 
 }
 header h2{
 	font-family: "Quicksand", sans-serif;
 }
 header nav li{
-	margin: 0 15px;
+	
 }
 /*End of Header Styling*/
 /*Sticky class for Header*/
@@ -74,6 +81,7 @@ header nav li{
 /**/
 /*Hero area*/
 a.btn{
+	transform: rotate(-15deg);
 	border-radius: 4px;
 	font-weight: bold;
 	background:#3f51b5 ;
@@ -83,9 +91,10 @@ a.btn{
 }
 section{
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	align-items: center;
 	padding: 100px 80px;
+
 }
 section p{
 	max-width: 750px;
@@ -112,11 +121,17 @@ section p{
 	background-color: #80a3db;
 }
 .hero h1{
+	    color: #90cbff;
+	    background: #000;
+	    transform: rotate(-15deg);
 	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 15px;
 }
 
 .hero h3{
+	background: #000;
+	    transform: rotate(-15deg);
+	    color: #90cbff;
 	font: normal 28px "Open Sans", sans-serif;
 	margin-bottom: 40px;
 }
@@ -127,13 +142,54 @@ section p{
 }
 .hero-content-area{
 	opacity: 0;
-	margin-top: 90px;
+	margin-top: 120px;
 	animation:slide-up 1s 0.4s ease-out forwards;
 }
 @keyframes slide-up{
 	100%{
 		opacity: 1;
-		margin: 0;
+		margin: 20px;
 	}
 }
 /*End of Hero Section*/
+/*Image Slider*/
+.carousel{
+	width: 100%;
+	margin: 20px auto;
+	height: 600px;
+	box-shadow: 0px 3px 7px 1px;
+}
+.carousel-inner{
+	max-width: 100%;
+	max-height: 100%;
+}
+/*End of Image Slider Section*/
+section:not(.hero){
+	background-color: #f5f5f5;
+}
+
+/*footer section*/
+footer{
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #2f2b37;
+	color: #fff;
+	padding: 20px;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+footer ul {
+	display: flex;
+}
+footer ul li{
+	list-style: none;
+	margin-left: 16px;
+}
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	opacity: 0.6;
+	text-align:center;
+}
+/*End of Footer*/
