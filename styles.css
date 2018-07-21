@@ -34,6 +34,7 @@ a:hover{
 }
 /*Styling the Header*/
 header{
+	background:#14182f;
 	color: #fff;
 	position: sticky;
 	width: 100%;
@@ -45,7 +46,10 @@ header{
 	animation:1s 0.5s fadein forwards;
 }
 .nav-link{
-	padding: 20px 20px ;
+	padding: 20px 20px;
+}
+.nav-link:active{
+
 }
 .nav-link:hover{
 	cursor: pointer;
@@ -84,19 +88,19 @@ header nav li{
 /**/
 /*Hero area*/
 a.btn{
-	transform: rotate(-15deg);
+	/*transform: rotate(-15deg);*/
 	border-radius: 4px;
 	font-weight: bold;
 	background:#14182f;
 	text-transform: uppercase;
 	text-align: center;
-	box-shadow: 1px 2px 9px 2px;
+	box-shadow: 3px 3px 9px 2px #14182f;
 	opacity: 1;
 }
 section{
 	display: flex;
-	/*flex-direction: column;*/
 	align-items: center;
+	justify-content: center;
 	padding: 100px 80px;
 
 }
@@ -127,14 +131,14 @@ section p{
 .hero h1{
 	    color: #90cbff;
 	    background: #000;
-	    transform: rotate(-15deg);
+	    /*transform: rotate(-15deg);*/
 	font: bold 60px "Open Sans", sans-serif;
 	margin-bottom: 15px;
 }
 
 .hero h3{
 	background: #000;
-	    transform: rotate(-15deg);
+	    /*transform: rotate(-15deg);*/
 	    color: #90cbff;
 	font: normal 28px "Open Sans", sans-serif;
 	margin-bottom: 40px;
