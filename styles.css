@@ -9,6 +9,7 @@ html{
 }
 body{
 		background-color: #2f2b37;
+
 }
 
 nav{
@@ -71,7 +72,9 @@ header nav li{
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  z-index: 6;
+  background:#14182f;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -84,9 +87,10 @@ a.btn{
 	transform: rotate(-15deg);
 	border-radius: 4px;
 	font-weight: bold;
-	background:#3f51b5 ;
+	background:#14182f;
 	text-transform: uppercase;
 	text-align: center;
+	box-shadow: 1px 2px 9px 2px;
 	opacity: 1;
 }
 section{
@@ -157,6 +161,7 @@ section p{
 	width: 100%;
 	margin: 20px auto;
 	height: 600px;
+	overflow: hidden;
 	box-shadow: 0px 3px 7px 1px;
 }
 .carousel-inner{
@@ -185,6 +190,9 @@ footer ul {
 footer ul li{
 	list-style: none;
 	margin-left: 16px;
+}
+li.fa:hover{
+	transform: scale(1.2);
 }
 footer p{
 	text-transform: uppercase;
