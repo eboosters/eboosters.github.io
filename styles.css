@@ -45,6 +45,11 @@ header{
 	/*padding: 35px 100px 0;*/
 	animation:1s 0.5s fadein forwards;
 }
+p{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+}
 .nav-link{
 	padding: 20px 20px;
 }
@@ -99,6 +104,7 @@ a.btn{
 }
 section{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	padding: 100px 80px;
@@ -150,13 +156,13 @@ section p{
 }
 .hero-content-area{
 	opacity: 0;
-	margin-top: 120px;
+	margin-top: 30px;
 	animation:slide-up 1s 0.4s ease-out forwards;
 }
 @keyframes slide-up{
 	100%{
 		opacity: 1;
-		margin: 20px;
+		margin: 0;
 	}
 }
 /*End of Hero Section*/
@@ -165,6 +171,9 @@ section p{
 	width: 100%;
 	margin: 20px auto;
 	height: 600px;
+	z-index: 2;
+	flex-shrink: shrink;
+	min-width: 500px;
 	/*overflow: hidden;*/
 	box-shadow: 0px 3px 7px 1px;
 }
@@ -172,24 +181,75 @@ section p{
 	max-width: 100%;
 	max-height: 100%;
 }
+.carousel-item img{
+	width: 100%;
+	height: 95%;
+}
+.carousel-caption{
+	font-size: 8px;
+/*	position: relative;*/
+}
+.info{
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: .1rem;
+	text-align: center;
+	font-size: 1.3rem;
+	line-height: 1.51rem;
+	color: #fff;
+}
 /*End of Image Slider Section*/
-section:not(.hero){
+section:not(.hero):nth-child(odd){
 	background-color: #ec3312b5;
 }
+/*Begin of Section-3*/
+	.third-section{
+		display: flex;
+		flex-direction: row;
+		padding: 45px 10px 35px;
+		flex-shrink: 1;
+		justify-content: space-between;
+		color: #fff;
+		text-align: left;
+	}
+	.err{margin-top: -56px}
+	.info h2{
+		margin-top: 20px;
+	}
+.credentials{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	color: #fff;
+	align-items: center;
+	align-content: center;
+	justify-content: space-around;
+	background: grey;
+}
 
+/*End of Section-3*/
 /*footer section*/
 footer{
-	height: 400px;
+	height: 380px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #2f2b37;
 	color: #fff;
 	padding: 20px;
 	flex-wrap: wrap;
+	flex-shrink: 1;
 	align-items: flex-end;
+}
+.footer{
+	height: 100%;
+	display: flex;
+	flex-shrink: 1;
+	flex-direction: column;
+	justify-content: space-between;
 }
 footer ul {
 	display: flex;
+	flex-shrink: 1;
+	flex-wrap: wrap;
 }
 ul li i{
 	transition: all .6s ;
@@ -202,6 +262,9 @@ footer ul li{
 ul li i:hover{
 	transform: scale(1.2);
 	color: #1e9ee0;
+}
+footer div{
+
 }
 footer p{
 	text-transform: uppercase;

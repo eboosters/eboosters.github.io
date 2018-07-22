@@ -3,6 +3,8 @@
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="CDN/bootstrap-4.1.2-dist/css/bootstrap.css">
+	<!-- Font-family: 'Roboto Condensed', sans-serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script type="text/javascript" src="CDN/jquery-3.3.1.slim.js"></script>
 	<script type="text/javascript" src="CDN/bootstrap-4.1.2-dist/js/bootstrap.js"></script>
@@ -12,9 +14,9 @@
 	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-	<div class="background" style="background-image: url(images/redbull.jpg);"></div>
+	<div class="background" style="background-image: url(images/redbull-min.jpg);"></div>
 	<header id="header1">
-	<h2><a href="#">E-Boosters</a></h2>
+	<a id="icon" href="#"><img src="images/icon1.png"></a>
 	<nav>
 		<li class="nav-link"><a href="#slider">About</a></li>
 		<li class="nav-link"><a href="#">Team</a></li>
@@ -26,7 +28,7 @@
 <!-- Begin hero section -->
 	<section class="hero">
 		<div class="hero-content-area">
-			<h1>E-Boosters</h1>
+			<h1>&lt; e-Boosters &gt;</h1>
 			<h3>We build Racing Machines</h3>
 			<a href="#slider" class="btn">Meet the Team</a>
 		</div>
@@ -54,7 +56,7 @@
 	    </div>
 	    <div class="carousel-item">
 	      <img class="d-block w-100" src="images/slide2.jpg" alt="Fourth slide">
-	        <div class="carousel-caption d-none d-md-block">
+	        <div class="carousel-caption d-md-block">
 			    <h5>Won the Eco Kart Championships</h5>
 			    <p>Came first #1 out 52 teams that Participated</p>
 			</div>
@@ -69,20 +71,41 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
-	<p></p>
+	<p class="info">Team E-Boosters was the brain child of two engineers concieved in the year 2011, by Paul Walker and Domnic Torretto. We haven't looked back ever since, winning consistently year after year and proving our mettle on the National as well as International tracks.</p>
 </section>
 	<!--End of Image Slider Section  -->
 
+<!-- Section-3 Begin -->
+	<section class="third-section">
+		<div class="info">
+		<img src="images/icon.jpg">
+		<h2>About e-Boosters</h2>
+		<p>e-Boosters India's premier Formula Student Electric team with a vision to "Revolutionize Electric Mobility in India focusing on sustainable technologies and innovations". We participate in the prestigious international competition Formula Student at Silverstone circuit, UK with our electric car,and have been winning the Formula Student Award by IMechE for being the best non-UK team for the past 3 years.</p>
+		</div>
+		<div class="info err"><img src="images/fomulabharat.jpg">
+		<h2>Formula Bharat Electric</h2>
+		<p>Preparing for,
+			Formula Bharat 2019, which is an engineering design competition in which students from colleges and universities all over the country, compete with a life-size Formula-style vehicle in areas of engineering design, overall cost, marketability and dynamic performance. After Qualifying in the prelims, we look forward to winning this year's race.
+		</p>
+		</div>
+
+	</section>
+	<div class="credentials">
+		<div><h2>6</h2><p>Cars</p></div>
+		<div><h2>45</h2><p>Members</p></div>
+		<div><h2>18</h2><p>Awards</p></div>
+	</div>
+<!-- Section-3 End -->
 
 
 	  <footer>
-<div>
-    <p>Address: RMDSSOE, WARJE <br>
+<div class="footer">
+<!--     <p>Address: RMDSSOE, WARJE <br>
     	Pune-411058
-    </p>
+    </p> -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.894442226106!2d73.78900235033723!3d18.488439987366025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be2d85407927%3A0xcdb80a8f52de798!2sRMD+Sinhgad+School+of+Engineering!5e0!3m2!1sen!2sin!4v1532164356962" width="450" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
  </div>
-	 <div>
+	 <div class="footer">
 	 	<p>Everything on this website is a copyrighted <br> property of EBoosters Racing team C/O RMDSSOE, <br>Duplication without prior permission not permitted.</p>
 	 	<br>
 	 	<p>Contact Us:
@@ -98,7 +121,13 @@
 	 	 	Shridhar Wakshe
 	 	 </p> 
 	 </div>
- 	<div>
+ 	<div class="footer">
+ 		<ul>
+ 			<li><a href="#">About</a></li>
+ 			<li><a href="#">Team</a></li>
+ 			<li><a href="#">Gallery</a></li>
+ 			<li><a href="#">Sponsors</a></li>
+ 		</ul>
     <p>Powered by RMD racing club</p>
    
     <ul>
