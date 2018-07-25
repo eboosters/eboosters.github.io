@@ -32,6 +32,9 @@ a:hover{
 	text-decoration: none;
 }
 /*Styling the Header*/
+#icon{
+	width: 180px;
+}
 header{
 	/*background:#14182f;*/
 	color: #fff;
@@ -60,7 +63,9 @@ p{
 }
 .nav-link:hover{
 	cursor: pointer;
-	animation: 0.35s  0s nav-fade forwards;
+	background-color: #0000ff;
+	/*transition: all .6s;*/
+	animation: 10s nav-fade forwards;
 }
 /*Declaring all the Animations together*/
 @keyframes fadein{
@@ -69,8 +74,17 @@ p{
 	}
 }
 @keyframes nav-fade{
+	50%{
+		background-color: #0000ff;
+	}
 	100%{
 		background-color: blue;
+	}
+	-50%{
+		background-color: #000000;
+	}
+	-100%{
+		background-color: #00ffff;
 	}
 }
 /*End of all the Animation Declarations*/
@@ -131,19 +145,33 @@ section p{
 	position: relative;
 	text-align: center;
 	align-items: center;
-	height: 100vh;
+	height: 100%;
 }
 .hero-sec{
 	z-index: 0;
 	height: 500px;
 	width: 100%;
 	padding: 0;
-	margin-top: 0;
+	margin-top: -99px;
 }
 .hero-img{
 	width: 100%;
 	height: 100%;
 }
+.hero-ul{
+	margin:10px 20px;
+	/*background-color: #b5b5b5;*/
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.hero-ul li{
+	margin: 10px 20px;
+}
+.hero-twitter{color:#1e9ee0 ;}
+.hero-facebook{color: #0d5292fc;}
+.hero-instagram{color:#a51697fc ;}
+.capt{color: #000000;}
 .background{
 	position: absolute;
 	top: 0;
@@ -152,7 +180,11 @@ section p{
 	height: 100%;
 	background-size: cover;
 	z-index: -1;
-	/*background-color: #80a3db;*/
+	opacity: .3;
+	background-color: #b5b5b5;
+}
+.back{
+	opacity: 0.5;
 }
 .hero h1{
 	    color: #90cbff;
@@ -176,21 +208,26 @@ section p{
 }
 .hero-content-area{
 	opacity: 0;
-	margin-top: 30px;
+	margin-top: 120px;
 	animation:slide-up 1s 0.4s ease-out forwards;
 }
 @keyframes slide-up{
 	100%{
 		opacity: 1;
-		margin: 0;
+		margin: 0px;
 	}
 }
 /*End of Hero Section*/
 /*Image Slider*/
+#slider-section{
+	margin-top: 90px;
+	background-color: #ba270ced;
+	padding: 10px 10px;
+}
 .carousel{
 	width: 100%;
 	margin: 20px auto;
-	height: 600px;
+	height: 650px;
 	z-index: 0;
 	flex-shrink: shrink;
 	min-width: 500px;
@@ -233,6 +270,7 @@ section:not(.hero):nth-child(even){
 		justify-content: space-between;
 		color: #fff;
 		text-align: left;
+		align-items: baseline;
 	}
 
 	.info h2{
@@ -255,7 +293,7 @@ div.h2{
 /*End of Section-3*/
 /*footer section*/
 footer{
-	height: 380px;
+	height: 300px;
 	display: flex;
 	justify-content: space-between;
 	background-color: #2f2b37;
@@ -285,10 +323,19 @@ footer ul li{
 	margin-left: 16px;
 
 }
+.email{
+	text-transform: lowercase;
+}
+/*End of Footer*/
 /*Social Media Icons*/
 .fa-twitter-square:hover{transform: scale(1.1); color:#1e9ee0 ;}
 .fa-facebook-square:hover{transform: scale(1.1); color: #0d5292fc;}
-.fa-instagram:hover{transform: scale(1.1); color: #a51697fc;}
+.fa-instagram:hover{animation:zoom-in-out 0.2s forwards; color: #a51697fc;}
+@keyframes zoom-in-out{
+	100%{
+		transform: scale(1.17);
+	}
+}
 
 /*End of Social media icons*/
 footer div{
@@ -301,3 +348,92 @@ footer p{
 	text-align:center;
 }
 /*End of Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BEGIN STYLING TEAM PAGE*/
+	.leader-image{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		margin: 20px auto;
+
+	}
+	.leader{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.leader img{
+		width: 290px;
+		height: 250px;
+		border-radius: 50%;
+		align-self: center;
+		padding: 20px 30px;
+		
+	}
+	.leader-image{
+		display: flex;
+		justify-content: center;
+	}
+	#leader-section{
+		background-color: red;
+	}
+	.leader *{color: white;}
+	.main-leader{
+
+	}
+/*END STYLING TEAM PAGE*/
+
+
+/*BEGIN STYLING SPONSOR SECTION*/
+	.sponsor-section{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-left: 15%;
+	}
+	.sponsor{
+		width: 50%;
+		min-height: 50%;
+		border-radius: 50%;
+	}
+	.sponsor-div{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		text-align: center;
+		flex-basis: 35%;
+	}
+	.sponsor-div h5{
+		padding: 10px;
+		color: #fff;
+		padding-right: 25px;
+		margin-right: 50%;
+		margin-top: 20px;
+	}
+/*BEGIN STYLING SPONSOR SECTION*/
+
+
+
+
+
+
