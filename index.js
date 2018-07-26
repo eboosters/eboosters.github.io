@@ -32,7 +32,8 @@ $(document).ready(function() {
     });
 
 });
-if(url.split('/')[1].split('.')[0]==="index"){
+var u=url.split('/')[1].split('.')[0];
+if(u==="index"||u===""){
 window.onscroll = function() {myFunction();scroll();};
 }
 else{
