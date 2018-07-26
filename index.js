@@ -2,7 +2,7 @@
 // When the user scrolls the page, execute myFunction 
 var url=location.pathname;
 var header     = document.querySelector("#header1");
-
+var nav        = document.querySelectorAll(".nav-a-link");
 var background = document.querySelector('.background');
 // Get the header
 
@@ -11,8 +11,14 @@ function myFunction() {
   var sticky = header.offsetTop;
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    nav.forEach(function(link){
+      link.classList.remove("link-color");
+    });
   } else {
     header.classList.remove("sticky");
+    nav.forEach(function(link){
+      link.classList.add("link-color");
+    });
   }
 }
 function scroll() {
@@ -22,6 +28,7 @@ function scroll() {
     cap.forEach(function(data){
     	data.style.color="#fff";
     });
+    
 }}
 // Scroll down button function
 $(document).ready(function() {
@@ -33,6 +40,7 @@ $(document).ready(function() {
 
 });
 var u=url.split('/')[1].split('.')[0];
+// var u=url.split('/')[6].split('.')[0];
 if(u==="index"||u===""){
 window.onscroll = function() {myFunction();scroll();};
 }
