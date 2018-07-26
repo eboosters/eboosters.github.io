@@ -32,7 +32,7 @@ $(document).ready(function() {
     });
 
 });
-if(u.split('/')[1].split('.')[0]==="index"){
+if(url.split('/')[1].split('.')[0]==="index"){
 window.onscroll = function() {myFunction();scroll();};
 }
 else{
