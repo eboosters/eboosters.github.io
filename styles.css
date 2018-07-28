@@ -475,6 +475,7 @@ footer p{
     }
 }
 @media only screen and (max-width: 1000px) {
+	.img-thumbnail {flex-basis: 45%;}
 	.background{
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -498,10 +499,22 @@ footer p{
  	
 }
 @media  (max-width: 800px){
+
+
+.fa-twitter-square {hover:none;}
+.fa-facebook-square{hover:none;}
+.fa-instagram{hover:none;}
+#header1{
+	flex-direction: column;
+	align-items: center;
+}
+.nav-a-link{padding: 0;}
 .sponsor-section{
 	flex-wrap: wrap;
 
 }
+.gallery-section{padding: 120px 10px 30px;}
+.img-thumbnail {flex-basis:100%; margin:0;}
 .sponsor-div{
 	flex-basis: 100%;
 }
