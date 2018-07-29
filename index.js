@@ -39,8 +39,8 @@ $(document).ready(function() {
     });
 
 });
-// var u=url.split('/')[1].split('.')[0];
-var u=url.split('/')[6].split('.')[0];
+var u=url.split('/')[1].split('.')[0];
+// var u=url.split('/')[6].split('.')[0];
 if(u==="index"||u===""){
 window.onscroll = function() {myFunction();scroll();};
 }
