@@ -175,8 +175,6 @@ section p{
 	background-repeat: no-repeat;
 	z-index: -1;
 	opacity: .3;
-	/*background-color: #b30225c7; */
-	background-color: #2f2b37;
 	
 }
 
@@ -266,7 +264,7 @@ section:not(.hero):nth-child(even){
 }
 /*Begin of Section-3*/
 	.third-section{
-		margin-top: 82px;
+		margin-top: 32px;
 		display: flex;
 		flex-direction: row;
 		padding: 45px 10px 35px;
