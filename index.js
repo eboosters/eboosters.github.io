@@ -39,9 +39,9 @@ $(document).ready(function() {
     });
 
 });
-var u=url.split('/')[1].split('.')[0];
-// var u=url.split('/')[6].split('.')[0];
-if(u==="index"||u===""){
+// var u=url.split('/')[1].split('.')[0];
+var u=url.split('/')[6].split('.')[0];
+if(u==="index"||u===""||u==="background"){
 window.onscroll = function() {myFunction();scroll();};
 }
 else{

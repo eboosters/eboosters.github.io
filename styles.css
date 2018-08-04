@@ -3,6 +3,7 @@
 	margin: 0;
 
 }
+
 html{
 	font:normal 16px sans-serif;
 	color: #555;
@@ -47,6 +48,7 @@ header{
 	/*padding: 35px 100px 0;*/
 	animation:1s 0.5s fadein forwards;
 }
+
 p{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 16px;
@@ -138,6 +140,7 @@ section p{
 	text-align: center;
 	align-items: center;
 	height: 100%;
+	padding-bottom: 0;
 }
 .hero-sec{
 	z-index: 0;
@@ -359,16 +362,21 @@ footer p{
 
 
 /*BEGIN STYLING TEAM PAGE*/
+.leader p::selection{background-color: #fff;}
+.footer p::selection{background-color: #000;}
+.footer a::selection{background-color: #000;}
+.leader h5::selection{background-color: #fff;}
 	.main-leader{
 		display: flex;
 		flex-basis: 100%;
 	}
 	.leader-image{
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	.leader{
+
+		flex-basis: 45%;
 		text-align: center;
 	}
 	.leader img{
@@ -488,20 +496,38 @@ footer p{
  	
 }
 @media  (max-width: 800px){
+p{font-size: 24px; line-height: 1.2em;}
+footer p{font-size: 20px;}
+h1{font-size: 26px;}
+h2{font-size: 2.5rem;}
+h3{font-size: 25px;}
+h4{font-size: 20px;}
+h5{font-size: 32px;}
+*{line-height: 1.2em;}
+#leader-section{
+	padding:20px 10px;
+
+}
+.background{background-size: cover;background-position-x:-700px;}
+.leader-image{flex-wrap: wrap;    
+    padding-top: 20px;
+	}
 .sponsor-section{
 	padding-left: 80px;
 }
 .hero-img{
-	margin-top: 140px;
+	margin-top: 0;
 	margin-bottom: 0px;
-	padding: 0;
+	padding-top: 170px;
 }
 .leader{
+	flex-basis: 100%;
 	padding: 0;
-	margin: 0;
+	margin: 20px 0;
 	height: 220px;
 	transform: scale(0.7);
 }
+.main-leader{flex-basis: 100%;	}
 
 .fa-twitter-square {hover:none;}
 .fa-facebook-square{hover:none;}
@@ -527,8 +553,8 @@ footer p{
 	flex-basis: 100%;
 }
 section p {
+	font-size: 20px;
 	padding: 0;
-	line-height: 1.2rem;
 }
 
 iframe{
